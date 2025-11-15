@@ -1,5 +1,5 @@
 # Tripzy
-
+-   Link deploy: https://tripzy-frontend-test-trinh-nhat-huy.vercel.app/
 
 ## 🚀 Hướng dẫn chạy project
 

@@ -90,7 +90,7 @@ const BusContent = () => {
                         alt="twoArrow"
                         width={20}
                         height={20}
-                        className="object-contain"
+                        className="size-5"
                     />
                 </div>
                 <BusSelectField
