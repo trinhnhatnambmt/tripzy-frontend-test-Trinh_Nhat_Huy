@@ -86,7 +86,7 @@ const BusContent = () => {
                 />
                 <div className="w-[20%] h-[45px] bg-white shadow-custom flex justify-center items-center rounded-full mt-6">
                     <Image
-                        src="/assets/icons/twoArrow.svg"
+                        src="/assets/icons/twoarrow.svg"
                         alt="twoArrow"
                         width={20}
                         height={20}
