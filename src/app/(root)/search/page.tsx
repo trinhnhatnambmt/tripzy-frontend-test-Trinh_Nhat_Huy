@@ -1,12 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { format, parse } from "date-fns";
 import { BusSearchFormData } from "@/lib/busValidation";
 import { useSearchParams } from "next/navigation";
 import { toast } from "sonner";
 
-const Search = () => {
+const SearchContent = () => {
     const [data, setData] = useState<BusSearchFormData | null>(null);
     const searchParams = useSearchParams();
 
@@ -94,6 +94,20 @@ const Search = () => {
                 </p>
             </div>
         </div>
+    );
+};
+
+const Search = () => {
+    return (
+        <Suspense
+            fallback={
+                <div className="w-full mx-auto mt-1 h-[80vh] bg-white shadow-custom rounded-2xl p-20 flex items-center justify-center">
+                    <p className="text-xl text-gray-500">Loading...</p>
+                </div>
+            }
+        >
+            <SearchContent />
+        </Suspense>
     );
 };
 
